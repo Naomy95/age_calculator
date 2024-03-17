@@ -1,0 +1,11 @@
+body {
+    overflow-x: hidden;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .text{
+    color:rgb(212, 94, 117);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+    font-weight:bold;
+  }
