@@ -1,6 +1,10 @@
 body {
     overflow-x: hidden;
     font-family: "Montserrat", sans-serif;
+    background-color: rgb(231, 239, 248);
+    display: flex;
+     align-items: center;
+     justify-content: center;
   }
   
   .text{
@@ -8,4 +12,35 @@ body {
     font-family: 'Courier New', Courier, monospace;
     font-size: 50px;
     font-weight:bold;
+  }
+  .input-div{
+     display: flex;
+  }
+  .input{
+    border-radius: 5px;
+    height: 50px;
+    margin-right: 20px;
+  }
+  .calculator-box{
+    margin-top: 50px;
+    border-radius: 25px 25px 50px 25px;
+    background: white;
+    padding: 40px;
+    width: 700px;
+    height: 650px;
+  }
+
+  .image{
+    margin-top: 30px;
+    height: 50px;
+    width: 50px;
+    float: right
+  }
+
+  .line {
+    width: 10%;
+    height: 10px;
+    margin-right: 10px;
+
+    background-color: rgb(64, 1, 64); /* Change the color as needed */
   }

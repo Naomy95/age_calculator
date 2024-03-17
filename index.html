@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+        <head>
+            <meta charset="UTF-8" />
+            <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <title>Age Calculator</title>
+            <link rel="stylesheet" href="./css/style.css" />
+            <!-- Latest compiled and minified CSS -->
+           
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+            integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+            <!-- google Montserrat  font  -->
+            <link rel="preconnect" href="https://fonts.googleapis.com" />
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+            <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet" />
+          </head>
+<body style="background-color: rgb(231, 239, 248)">
+    <header >
+        <main class="main-box">
+            
+          <div >
+            <div class="calculator-box">
+                
+             
+            <div class="input-div">
+             <div>
+              <h3 style="color: grey; font-weight: bold;">DAY</h3>
+              <input type="text" class="input" id="dob" placeholder="DD">
+             </div>
+             <div>
+              <h3 style="color: grey; font-weight: bold;">MONTH</h3>
+              <input type="text" class="input" id="dob" placeholder="MM">
+             </div>
+              <div>
+                <h3 style="color: grey; font-weight: bold;">YEAR</h3>
+                <input type="text" class="input" id="dob" placeholder="YYYY">
+              </div>
+            </div>
+            <hr>
+            <img src="images/down-arrow.png" class="image" alt="" value="Calculate Age" onclick="calculateAge()">
+           
+              <div id="result">
+                <div style="display: flex; margin-top: 70px;  align-items: center;">
+                  <div class="line"></div>
+                  <div class="line"></div>
+                  <h3 style="font-weight: 800; font-size: 50px; font-style: italic; color: black;">years</h3>
+                </div>
+                <div style="display: flex; margin-top: 10px;  align-items: center;">
+                  <div class="line"></div>
+                  <div class="line"></div>
+                  <h3 style="font-weight: 800; font-size: 50px; font-style: italic; color: black;">months</h3>
+                </div>
+                <div style="display: flex; margin-top: 10px;  align-items: center;">
+                  <div class="line"></div>
+                  <div class="line"></div>
+                  <h3 style="font-weight: 800; font-size: 50px; font-style: italic; color: black;">days</h3>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </main>
+    </header>
+
+      <script src="./js/app.js"></script>
+</body>
+
+
+</html>
