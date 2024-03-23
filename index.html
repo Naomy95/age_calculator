@@ -12,6 +12,7 @@
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
             integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
             <!-- google Montserrat  font  -->
+            
             <link rel="preconnect" href="https://fonts.googleapis.com" />
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
             <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet" />
@@ -27,34 +28,49 @@
             <div class="input-div">
              <div>
               <h3 style="color: grey; font-weight: bold;">DAY</h3>
-              <input type="text" class="input" id="dob" placeholder="DD">
+              <input type="text" class="input" id="day" placeholder="DD">
              </div>
              <div>
               <h3 style="color: grey; font-weight: bold;">MONTH</h3>
-              <input type="text" class="input" id="dob" placeholder="MM">
+              <input type="text" class="input" id="month" placeholder="MM">
              </div>
               <div>
                 <h3 style="color: grey; font-weight: bold;">YEAR</h3>
-                <input type="text" class="input" id="dob" placeholder="YYYY">
+                <input type="text" class="input" id="year" placeholder="YYYY">
               </div>
             </div>
             <hr>
-            <img src="images/down-arrow.png" class="image" alt="" value="Calculate Age" onclick="calculateAge()">
+            <img onclick="getInput()" src="images/down-arrow.png" class="image" alt="" value="Calculate Age" onclick="calculateAge()">
            
               <div id="result">
                 <div style="display: flex; margin-top: 70px;  align-items: center;">
-                  <div class="line"></div>
-                  <div class="line"></div>
+                  <div style="width: 20%;">
+                    <div id="yearDisplay"></div>
+                   <div style="display: flex;   align-items: center;  ;">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                   </div>
+                   </div>
                   <h3 style="font-weight: 800; font-size: 50px; font-style: italic; color: black;">years</h3>
                 </div>
                 <div style="display: flex; margin-top: 10px;  align-items: center;">
-                  <div class="line"></div>
-                  <div class="line"></div>
+                  <div style="width: 20%;">
+                    <div id="monthDisplay"></div>
+                   <div style="display: flex;   align-items: center;  ;">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                   </div>
+                   </div>
                   <h3 style="font-weight: 800; font-size: 50px; font-style: italic; color: black;">months</h3>
                 </div>
-                <div style="display: flex; margin-top: 10px;  align-items: center;">
+                <div style="display: flex; margin-top: 10px; ; align-items: center; ">
+                 <div style="width: 20%;">
+                  <div id="dayDisplay"></div>
+                 <div style="display: flex;   align-items: center;  ;">
                   <div class="line"></div>
                   <div class="line"></div>
+                 </div>
+                 </div>
                   <h3 style="font-weight: 800; font-size: 50px; font-style: italic; color: black;">days</h3>
                 </div>
               </div>
